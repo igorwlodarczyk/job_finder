@@ -23,6 +23,7 @@ develop-eggs/
 *.egg
 
 *.sqlite3
+*.db
 
 .vscode/
 *.swp
