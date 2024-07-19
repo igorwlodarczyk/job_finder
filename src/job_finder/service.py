@@ -32,4 +32,8 @@ def run_service():
 
 
 if __name__ == "__main__":
-    run_service()
+    try:
+        run_service()
+    except Exception as e:
+        log_message = f"{type(e)}: {e}"
+        send_notification(log_message)
