@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job_finder"
+authors = [
+    {name = "Igor Wlodarczyk", email = "wlodar.igor@gmail.com"},
+]
+description = "The project focuses on delivering alerts whenever a new job vacancy is posted."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["job", "finder", "hr"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests",
+    "python-decouple",
+    "beautifulsoup4"
+]
+version = "1.0.0"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["job_finder"]
